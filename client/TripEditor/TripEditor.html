@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip Editor</title>
+    <link rel="stylesheet" href="./TripEditor.css" />
+    <link rel="stylesheet" href="../Footer/Footer.css" />
+    <link rel="stylesheet" href="../Header/Header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="Header-container">
+      <i class="fa-solid fa-xmark" onclick="history.back()"></i>
+      <!-- <i class="fa-solid fa-gear"></i> -->
+    </div>
+
+    <!-- Body -->
+    <div class="TripEditor-container">
+      <!-- TripHolder -->
+      <section class="TripHolder-container">
+        <div class="TripHolder">
+          <section class="TripHolder-front">
+            <div>台灣之旅</div>
+            <div>18/08/2023 - 21/08/2023</div>
+          </section>
+          <section class="TripHolder-back">
+            <div>back</div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Editor -->
+      <div class="Editor-container">click to rotate</div>
+
+      <!-- Map -->
+      <div class="Map-container" id="map"></div>
+
+      <!-- TripDate Filter -->
+      <div class="TripDate-container">
+        <div class="active" onclick="initMap()">All</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="Footer-container">
+      <i class="fa-solid fa-plane-departure" onclick="handleToTripPage()"></i>
+      <i class="fa-solid fa-earth-asia" onclick="handleToMainPage()"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDElnMGkXJThuDzryppYqKWTXED3Ki4Kp8&callback=initMap"></script> -->
+    <script src="../Header/Header.js"></script>
+    <script src="../Footer/Footer.js"></script>
+    <script src="./script/TripEditor.js"></script>
+    <script src="./script/TripDate.js"></script>
+    <script src="./script/TripHolder.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+
+.Trip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20%;
+  margin-top: 23%;
+}
+
+.NewTrip-container-outline {
+  border: #f2f2f2 4px solid;
+  border-radius: 20px;
+}
+
+.NewTrip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 70px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: white 3px solid;
+  font-size: 25px;
+}
+
+.TripHolders-container {
+  position: absolute;
+  bottom: 100px;
+}
+
+.TripHolder-container {
+  width: 80vw;
+  height: 140px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(38, 38, 38);
+  color: white;
+  transition: transform 0.3s ease-out;
+}
+
+.TripHolder-container:hover {
+  animation: rotate-up-left 0.3s ease-out forwards;
+}
+
+@keyframes rotate-up-left {
+  0% {
+    transform: none;
+  }
+  100% {
+    /* rotate(degree) translate(x dir, y dir) */
+    transform: rotate(-7deg) translate(-0px, -20px);
+  }
+}
+
+.hidden {
+  display: none;
+}
