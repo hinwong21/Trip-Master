@@ -19,6 +19,7 @@ body {
   padding: 10px;
   perspective: 1000px;
   overflow: hidden;
+  color: white;
 }
 
 .TripHolder {
@@ -48,15 +49,15 @@ body {
 }
 
 .TripHolder-front {
-  background-image: url(./uploads/mbg.jpg);
+  background-color: black;
 }
 .TripHolder-back {
-  background-image: url(./uploads/mbg.jpg);
+  background-color: black;
 }
 
 .TripHolder-front div,
 .TripHolder-back div {
-  /* padding: 20px; */
+  padding: 20px;
   z-index: 1;
 }
 
