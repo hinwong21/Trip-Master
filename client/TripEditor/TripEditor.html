@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trip Editor</title>
-    <link rel="stylesheet" href="./TripEditor.css" />
+    <link rel="stylesheet" href="./css/TripEditor.css" />
+    <link rel="stylesheet" href="./css/TripHolder.css" />
     <link rel="stylesheet" href="../Footer/Footer.css" />
     <link rel="stylesheet" href="../Header/Header.css" />
     <link
@@ -28,8 +29,41 @@
       <section class="TripHolder-container">
         <div class="TripHolder">
           <section class="TripHolder-front">
-            <div>台灣之旅</div>
-            <div>18/08/2023 - 21/08/2023</div>
+            <div class="TripHolder-title">
+              <div>台灣之旅</div>
+            </div>
+
+            <div class="TripHolder-travelPeriod-container">
+              <div class="TripHolder-travelPeriod">
+                <section class="TripHolder-travelPeriod-notice">
+                  <div>day/month</div>
+                </section>
+                <div class="TripHolder-travelPeriod-main">
+                  <section class="TripHolder-travelPeriod-main-title">
+                    <div>trip</div>
+                    <div>start</div>
+                  </section>
+                  <section class="TripHolder-travelPeriod-main-date">
+                    <div>18/08</div>
+                  </section>
+                </div>
+              </div>
+
+              <div class="TripHolder-travelPeriod">
+                <section class="TripHolder-travelPeriod-notice">
+                  day/month
+                </section>
+                <div class="TripHolder-travelPeriod-main">
+                  <section class="TripHolder-travelPeriod-main-title">
+                    <div>trip</div>
+                    <div>end</div>
+                  </section>
+                  <section class="TripHolder-travelPeriod-main-date">
+                    <div>21/08</div>
+                  </section>
+                </div>
+              </div>
+            </div>
           </section>
           <section class="TripHolder-back">
             <div>Add</div>
