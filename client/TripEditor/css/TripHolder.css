@@ -99,5 +99,6 @@
 }
 
 .TripHolder-back-editor {
+  text-transform: uppercase;
   padding: 5px;
 }

@@ -39,7 +39,7 @@ const markers = [
     position: { lat: 25.072508978855105, lng: 121.52482361103843 },
     title: "臺北市立美術館",
     type: "Exhibition",
-    travelDate: "",
+    travelDate: 19,
   },
   {
     position: { lat: 25.08312621861806, lng: 121.55776985336895 },
@@ -117,7 +117,7 @@ const markers = [
     position: { lat: 25.05132228668042, lng: 121.54976148213822 },
     title: "大魯閣Roller186滑輪場 小巨蛋館",
     type: "Visit",
-    travelDate: "",
+    travelDate: 21,
   },
   {
     position: { lat: 25.028319165738136, lng: 121.50609483823503 },
@@ -135,7 +135,7 @@ const markers = [
     position: { lat: 25.04333746271507, lng: 121.50618178213796 },
     title: "FOUR TAIPEI",
     type: "Food",
-    travelDate: "",
+    travelDate: 20,
   },
   {
     position: { lat: 25.020247696427845, lng: 121.55737236684621 },
