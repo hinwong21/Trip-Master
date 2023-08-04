@@ -1,17 +1,20 @@
 const footerContainer = document.querySelector(".Footer-container");
 
-// footerContainer.innerHTML = ` <i class="fa-solid fa-plane-departure"></i>
-//       <i class="fa-solid fa-earth-asia"></i>
-//       <i class="fa-solid fa-cart-shopping"></i>`;
-
-const mainPage = document.querySelector(".MainPage")
-const tripPage = document.querySelector(".TripPage");
-
 function handleToMainPage() {
-    window.location.href = "../Main/Main.html";
+  window.location.href = "../Main/Main.html";
 }
 
 function handleToTripPage() {
   window.location.href = "../Trip/Trip.html";
 }
 
+const plane = document.querySelector(".fa-plane-departure");
+const earth = document.querySelector(".fa-earth-asia");
+const shopping = document.querySelector(".fa-cart-shopping");
+
+if (window.location.href.includes("Main")) {
+  earth.style.color = "black";
+} else if (window.location.href.includes("Trip")) {
+  plane.style.color = "black";
+}
+// not already write the third page

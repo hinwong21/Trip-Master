@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .Main-container {
@@ -22,4 +22,25 @@ body {
   background-color: white;
   border: #f2f2f2 5px solid;
   font-size: 22px;
+}
+
+.About-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  padding-top: 30px;
+}
+
+.About-title {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.About-content {
+  color: #515050;
+  font-size: 12px;
+  text-align: center;
 }

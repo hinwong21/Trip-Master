@@ -6,6 +6,7 @@
     <title>Trip Editor</title>
     <link rel="stylesheet" href="./css/TripEditor.css" />
     <link rel="stylesheet" href="./css/TripHolder.css" />
+    <link rel="stylesheet" href="./css/TripDate.css" />
     <link rel="stylesheet" href="../Footer/Footer.css" />
     <link rel="stylesheet" href="../Header/Header.css" />
     <link
@@ -28,6 +29,7 @@
       <!-- TripHolder -->
       <section class="TripHolder-container">
         <div class="TripHolder">
+          <!-- TripHolder front -->
           <section class="TripHolder-front">
             <div class="TripHolder-title">
               <div>台灣之旅</div>
@@ -65,23 +67,23 @@
               </div>
             </div>
           </section>
+
+          <!-- TripHolder back -->
           <section class="TripHolder-back">
-            <div>Add</div>
-            <div>Edit</div>
+            <div class="TripHolder-back-editor">Add</div>
+            <div class="TripHolder-back-editor">Edit</div>
           </section>
         </div>
       </section>
 
-      <!-- Editor -->
-      <div class="Editor-container">click to rotate</div>
+      <!-- Animation notice -->
+      <div class="Animation-notice">click to rotate</div>
 
       <!-- Map -->
       <div class="Map-container" id="map"></div>
 
       <!-- TripDate Filter -->
-      <div class="TripDate-container">
-        <div class="active" onclick="initMap()">All</div>
-      </div>
+      <div class="TripDate-container"></div>
     </div>
 
     <!-- Footer -->

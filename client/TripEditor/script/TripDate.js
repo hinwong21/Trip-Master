@@ -9,29 +9,42 @@ tripEnd.setDate(21);
 const tripStartDate = tripStart.getDate();
 const tripEndDate = tripEnd.getDate();
 
+tripDateContainer.innerHTML += ` <div class="active TripDate" onclick="initMap(); handleFilterMarker(0)">All</div>`;
+
 for (let i = tripStartDate; i <= tripEndDate; i++) {
-  tripDateContainer.innerHTML += `<div onclick="handleFilterMarker(${i})">${i}</div>`;
+  tripDateContainer.innerHTML += `<div class="TripDate" onclick="handleFilterMarker(${i})">${i}</div>`;
 }
 
 async function handleFilterMarker(number) {
-  const filterMarker = markers.filter(
-    (marker) =>
-      marker.travelDate === number ||
-      marker.type === "Hotel" &&
-      marker.travelDate >= number
-  );
-  const { Map } = await google.maps.importLibrary("maps");
-  map = new Map(document.getElementById("map"), {
-    center: { lat: 25.045488958061224, lng: 121.51568649748022 },
-    zoom: 15,
+  const TripDates = document.querySelectorAll(".TripDate");
+  TripDates.forEach((e) => {
+    e.classList.remove("active");
   });
 
-  for (let i = 0; i < filterMarker.length; i++) {
-    marker = new google.maps.Marker({
-      position: filterMarker[i].position,
-      map: map,
-      title: filterMarker[i],
-      icon: iconByType[filterMarker[i].type],
+  const clickedTripDate = event.currentTarget;
+  clickedTripDate.classList.add("active");
+
+  if (number === 0) {
+    initMap();
+  } else {
+    const filterMarker = markers.filter(
+      (marker) =>
+        marker.travelDate === number ||
+        (marker.type === "Hotel" && marker.travelDate >= number)
+    );
+    const { Map } = await google.maps.importLibrary("maps");
+    map = new Map(document.getElementById("map"), {
+      center: { lat: 25.045488958061224, lng: 121.51568649748022 },
+      zoom: 15,
     });
+
+    for (let i = 0; i < filterMarker.length; i++) {
+      marker = new google.maps.Marker({
+        position: filterMarker[i].position,
+        map: map,
+        title: filterMarker[i],
+        icon: iconByType[filterMarker[i].type],
+      });
+    }
   }
 }

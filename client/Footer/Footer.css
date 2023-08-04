@@ -5,10 +5,16 @@
   position: fixed;
   bottom: 0;
   width: 60%;
-  padding: 8% 20%;
+  padding: 6% 20%;
   background-color: white;
 }
 
 .Footer-container i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+  color: gray;
 }

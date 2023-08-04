@@ -39,6 +39,7 @@
 .TripHolder-front {
   display: flex;
   flex-direction: column;
+  background-image: url(../../uploads/TripHolder-front.jpg);
 }
 
 .TripHolder-title {
@@ -46,11 +47,11 @@
   justify-content: center;
   font-size: 35px;
   padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 .TripHolder-travelPeriod-container {
   display: flex;
+  padding-top: 5%;
 }
 
 .TripHolder-travelPeriod {
@@ -90,5 +91,13 @@
 }
 
 .TripHolder-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: rotateY(180deg);
+  background-image: url(../../uploads/TripHolder-back.png);
+}
+
+.TripHolder-back-editor {
+  padding: 5px;
 }
